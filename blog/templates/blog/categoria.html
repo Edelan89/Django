@@ -36,7 +36,7 @@
         Categorias:
         {% for post in posts %}
         {% for categoria in categorias %}
-        {{% categoria.nombre %}} &nbsp;&nbsp;&nbsp;
+        {{ categoria.nombre }} &nbsp;&nbsp;&nbsp;
         {% endfor %}
         {% endfor %}
     </div>
