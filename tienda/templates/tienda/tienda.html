@@ -3,9 +3,28 @@
 {% load static %}
 
 {% block content %}
+<div class="container">
+    <div class="row">
 
-<div>
-    <p style="color: whitesmoke; text-align: center;">This is a sample text</p>
+        {% for producto in productos %}
+        <div class="col-md-3">
+
+            <div class="card" style="margin: 5px 5px;">
+                <img src="{{productos.image.url}}" class="card-img-top">
+
+                <div class="card-body" style="text-align: center;">
+                    <h7 class="card-title">{{producto.nombre}}</h7>
+                    <p class="card-text">{{producto.precio}}&nbsp; € </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        {% endfor %}
+
+    </div>
 </div>
 
 {% endblock %}
