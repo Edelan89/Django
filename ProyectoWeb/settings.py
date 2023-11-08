@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'blog',
     'contacto',
     'tienda',
+    'autenticacion',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,5 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'alfyo89@gmail.com'
 EMAIL_HOST_PASSWORD = '*Maxi34170798'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
