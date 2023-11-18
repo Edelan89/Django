@@ -3,7 +3,7 @@ from django.views.generic import View
 from django.contrib.auth import login, logout
 from django.contrib import messages
 
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 # Create your views here.
 
@@ -34,3 +34,8 @@ def cerrar_sesion(request):
     logout(request)
 
     return redirect('Home')
+
+def logear(request):
+    form = AuthenticationForm()
+
+    return render(request, "login/login.html",{"form":form})
