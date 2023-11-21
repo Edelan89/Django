@@ -33,7 +33,8 @@
 
     {% else %}
 
-    <a href="#">Login</a> &nbsp; &nbsp; <a href="{% url 'Autenticacion' %}" style="color: whitesmoke;">Registrate</a>
+    <a href="{% url 'logear' %}">Login</a> &nbsp; &nbsp; <a href="{% url 'Autenticacion' %}"
+      style="color: whitesmoke;">Registrate</a>
 
     {% endif %}
 
